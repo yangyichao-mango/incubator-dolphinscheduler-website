@@ -58,6 +58,20 @@ waste time。</p>
     </tbody>
 </table>
 <p>其中 <code>Issue 号</code>是指当前 Pull Request 对应要解决的 Issue 号，<code>模块名</code>同 Issue 的模块名。</p>
+<h3>Pull Request 模板</h3>
+<p>todo 关联到CommitMessage篇</p>
+<h3>相关问题</h3>
+<ul>
+<li>
+<p>怎样处理一个 Pull Request 对应多个 Issue 的场景。</p>
+<p>首先 Pull Request 和 Issue 一对多的场景是比较少的。Pull Request 和 Issue 一对多的根本原因就是出现了多个
+Issue 需要做大体相同的一件事情的场景，通常针对这种场景有两种解决方法：第一种就是把多个功能相同的 Issue 合并到同一个 Issue 上，然后把其他的
+Issue 进行关闭；第二种就是多个 Issue 大体上是在做一个功能，但是存在一些细微的差别，这类场景下可以把每个 Issue 的职责划分清楚，每一个
+Issue 的类型都标记为 Sub-Task，然后将这些 Sub-Task 类型的 Issue 关联到一个总 Issue 上，在提交
+Pull Request 时，每个 Pull Request 都只关联一个 Sub-Task 的 Issue。</p>
+<p>尽量把一个 Pull Request 作为最小粒度。如果一个 Pull Request 只做一件事，Contributor 容易完成，Pull Request 影响的范围也会更加清晰，对 reviewer 的压力也会小。</p>
+</li>
+</ul>
 </div></section><footer class="footer-container"><div class="footer-body"><img src="/img/ds_gray.svg"/><div class="cols-container"><div class="col col-12"><h3>Disclaimer</h3><p>Apache DolphinScheduler (incubating) is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by Incubator. 
 Incubation is required of all newly accepted projects until a further review indicates 
 that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. 
