@@ -56,6 +56,20 @@
     </tbody>
 </table>
 <p><code>Issue No</code> refers to the Issue number corresponding to the current Pull Request to be resolved, <code>Module Name</code> is the same as the <code>Module Name</code> of Issue.</p>
+<h3>Pull Request content</h3>
+<p>Please refer to the commit message section.</p>
+<h3>Question</h3>
+<ul>
+<li>
+<p>How to deal with one Pull Request to many Issues scenario.</p>
+<p>First of all, there are fewer scenarios for one Pull Request to many Issues.
+The root cause is that multiple issues need to do the same thing.
+Usually, there are two solutions to this scenario: the first is to merge multiple issues with into the same issue, and then close the other issues;
+the second is multiple issues have subtle differences.
+In this scenario, the responsibilities of each issue can be clearly divided. The type of each issue is marked as Sub-Task, and then these sub task type issues are associated with one issue.
+And each Pull Request is submitted should be associated with only one issue of a sub task.</p>
+</li>
+</ul>
 </div></section><footer class="footer-container"><div class="footer-body"><img src="/img/ds_gray.svg"/><div class="cols-container"><div class="col col-12"><h3>Disclaimer</h3><p>Apache DolphinScheduler (incubating) is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by Incubator. 
 Incubation is required of all newly accepted projects until a further review indicates 
 that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. 
